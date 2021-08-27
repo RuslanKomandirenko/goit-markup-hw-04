@@ -384,6 +384,7 @@ a {
 
 .team-list {
   display: flex;
+  background-color: var(--primary-bg-color);
 }
 
 .team-list .item {
