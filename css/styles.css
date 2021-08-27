@@ -141,6 +141,12 @@ a {
 .contacts-nav .link:focus {
   color: var(--accent-color);
 }
+
+.contacts-nav .link:hover svg,
+.contacts-nav .link:focus svg {
+  fill: var(--accent-color);
+}
+
 .site-nav .link.current {
   color: var(--accent-color);
 }
@@ -149,16 +155,14 @@ a {
   width: 16px;
   height: 12px;
   margin-right: 10px;
-}
-
-.icon-envelope:hover {
-  fill: var(--accent-color);
+  fill: var(--primary-text-color);
 }
 
 .icon-smartphone {
   width: 10px;
   height: 16px;
   margin-right: 10px;
+  fill: var(--primary-text-color);
 }
 
 .icon-smartphone:hover {
@@ -360,12 +364,13 @@ a {
 .section-team {
   padding-top: 94px;
   padding-bottom: 94px;
+  background-color: var(--feature-bg-color);
 }
 
 .team {
   max-width: 1600px;
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 0;
   padding-top: 0;
   padding-bottom: 0;
 }
@@ -411,7 +416,8 @@ a {
 .team-list .text {
   font-size: 16px;
   line-height: 1.19;
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 16px;
   padding: 0;
   text-align: center;
 }
@@ -420,8 +426,7 @@ a {
   display: flex;
   width: 100%;
   justify-content: space-between;
-  padding: 0 32px 30px 32px;
-  margin-top: 16px;
+  padding: 0 32px;
 }
 
 .team-social-links {
@@ -444,24 +449,24 @@ a {
   background-color: var(--accent-color);
 }
 
-.team-social-icons:hover,
-.team-social-icons:focus {
-  fill: var(--primary-bg-color);
+.team-social-links:hover svg,
+.team-social-links:focus svg {
+  fill: var(--hero-text-color);
 }
 
 /* Clients */
 
 .section-clients {
-  padding-top: 0;
+  padding-top: 94px;
   padding-bottom: 94px;
 }
 
 .clients {
   margin-top: 0;
-  margin-bottom: 50px;
   padding-top: 0;
   padding-bottom: 0;
 }
+
 .section-title .clients {
   margin-top: 0;
   margin-bottom: 0;
@@ -507,8 +512,8 @@ a {
   border: 1px solid #2196f3;
 }
 
-.clients-icon:hover,
-.clients-icon:focus {
+.clients-link:hover svg,
+.clients-link:focus svg {
   fill: var(--accent-color);
 }
 
